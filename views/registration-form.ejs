@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/stylesheets/registration.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="forms">
+                <div class="registration-form">
+                    <span class="title">Registration Form</span>
+                    <p> <%=(typeof alertMsg!='undefined')? alertMsg:''%></p>
+                    <form method="post" action="/register">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your full name" name="full_name" required />
+                         </div>
+                         <div class="input-field">
+                            <input type="email" placeholder="Enter your email" name="user_email" />
+                         </div>
+                         <div class="input-field">
+                            <input type="password" placeholder="Enter your password" name="user_password" />
+                         </div>
+                         <div class="input-field">
+                            <input type="text" placeholder="Enter your favourite movies(upto 5)" name="movies" />
+                         </div>
+                         <div class="input-field">
+                            <input type="text" placeholder="Enter your favourite shows(upto 5)" name="shows" />
+                         </div>
+                         <div class="input-field">
+                            <input type="text" placeholder="Enter your favourite books(upto 5)" name="books" />
+                         </div>
+                         <div class="input-field">
+                            <input type="text" placeholder="Enter your favourite songs(upto 5)" name="songs" />
+                         </div>
+                         <div class="input-field">
+                            <input type="text" placeholder="Enter your favourite games(upto 5)" name="games" />
+                         </div>
+                         <a href="/login">Login</a>
+                         <button type="submit">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

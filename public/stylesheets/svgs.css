@@ -1,0 +1,200 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/realistic-galaxy-background_52683-12122.jpg?size=626&ext=jpg&ga=GA1.2.1787588576.1671393712');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  #wrap {
+      height:100vh;
+      
+    }
+    
+    .container {
+      height: 300vh;
+      
+    }
+  
+  
+  
+  #carouselmovies {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    top: -150%;
+    left: 20%;
+    transform: translateY(-50%);
+    overflow: hidden; }
+    #carouselmovies div {
+      position: absolute;
+      transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+      opacity: 1; }
+      #carouselmovies div img {
+        width: 400px;
+        transition: width 1s; }
+      #carouselmovies div.hideLeft {
+        left: 0%;
+        opacity: 0;
+        transform: translateY(50%) translateX(-50%); }
+        #carouselmovies div.hideLeft img {
+          width: 200px; }
+      #carouselmovies div.hideRight {
+        left: 100%;
+        opacity: 0;
+        transform: translateY(50%) translateX(-50%); }
+        #carouselmovies div.hideRight img {
+          width: 200px; }
+      #carouselmovies div.prev {
+        z-index: 5;
+        left: 30%;
+        transform: translateY(50px) translateX(-50%); }
+        #carouselmovies div.prev img {
+          width: 300px; }
+      #carouselmovies div.prevLeftSecond {
+        z-index: 4;
+        left: 15%;
+        transform: translateY(50%) translateX(-50%);
+        opacity: .7; }
+        #carouselmovies div.prevLeftSecond img {
+          width: 200px; }
+      #carouselmovies div.selected {
+        z-index: 10;
+        left: 50%;
+        transform: translateY(0px) translateX(-50%); }
+      #carouselmovies div.next {
+        z-index: 5;
+        left: 70%;
+        transform: translateY(50px) translateX(-50%); }
+        #carouselmovies div.next img {
+          width: 300px; }
+      #carouselmovies div.nextRightSecond {
+        z-index: 4;
+        left: 85%;
+        transform: translateY(50%) translateX(-50%);
+        opacity: .7; }
+        #carouselmovies div.nextRightSecond img {
+          width: 200px; }
+  
+          #carouselmusic {
+            position: relative;
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            top: -25%;
+            transform: translateY(-50%);
+            overflow: hidden; }
+            #carouselmusic div {
+              position: absolute;
+              transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+              opacity: 1; }
+              #carouselmusic div img {
+                width: 400px;
+                transition: width 1s; }
+              #carouselmusic div.hideLeft {
+                left: 0%;
+                opacity: 0;
+                transform: translateY(50%) translateX(-50%); }
+                #carouselmusic div.hideLeft img {
+                  width: 200px; }
+              #carouselmusic div.hideRight {
+                left: 100%;
+                opacity: 0;
+                transform: translateY(50%) translateX(-50%); }
+                #carouselmusic div.hideRight img {
+                  width: 200px; }
+              #carouselmusic div.prev {
+                z-index: 5;
+                left: 30%;
+                transform: translateY(50px) translateX(-50%); }
+                #carouselmusic div.prev img {
+                  width: 300px; }
+              #carouselmusic div.prevLeftSecond {
+                z-index: 4;
+                left: 15%;
+                transform: translateY(50%) translateX(-50%);
+                opacity: .7; }
+                #carouselmusic div.prevLeftSecond img {
+                  width: 200px; }
+              #carouselmusic div.selected {
+                z-index: 10;
+                left: 50%;
+                transform: translateY(0px) translateX(-50%); }
+              #carouselmusic div.next {
+                z-index: 5;
+                left: 70%;
+                transform: translateY(50px) translateX(-50%); }
+                #carouselmusic div.next img {
+                  width: 300px; }
+              #carouselmusic div.nextRightSecond {
+                z-index: 4;
+                left: 85%;
+                transform: translateY(50%) translateX(-50%);
+                opacity: .7; }
+                #carouselmusic div.nextRightSecond img {
+                  width: 200px; }
+  
+                  #carouselgames {
+                    position: relative;
+                    width: 80%;
+                    height: 80%;
+                    object-fit: cover;
+                    top: 20%;
+                    left: 20%;
+                    transform: translateY(-50%);
+                    overflow: hidden; }
+                    #carouselgames div {
+                      position: absolute;
+                      transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+                      opacity: 1; }
+                      #carouselgames div img {
+                        width: 400px;
+                        transition: width 1s; }
+                      #carouselgames div.hideLeft {
+                        left: 0%;
+                        opacity: 0;
+                        transform: translateY(50%) translateX(-50%); }
+                        #carouselgames div.hideLeft img {
+                          width: 200px; }
+                      #carouselgames div.hideRight {
+                        left: 100%;
+                        opacity: 0;
+                        transform: translateY(50%) translateX(-50%); }
+                        #carouselgames div.hideRight img {
+                          width: 200px; }
+                      #carouselgames div.prev {
+                        z-index: 5;
+                        left: 30%;
+                        transform: translateY(50px) translateX(-50%); }
+                        #carouselgames div.prev img {
+                          width: 300px; }
+                      #carouselgames div.prevLeftSecond {
+                        z-index: 4;
+                        left: 15%;
+                        transform: translateY(50%) translateX(-50%);
+                        opacity: .7; }
+                        #carouselgames div.prevLeftSecond img {
+                          width: 200px; }
+                      #carouselgames div.selected {
+                        z-index: 10;
+                        left: 50%;
+                        transform: translateY(0px) translateX(-50%); }
+                      #carouselgames div.next {
+                        z-index: 5;
+                        left: 70%;
+                        transform: translateY(50px) translateX(-50%); }
+                        #carouselgames div.next img {
+                          width: 300px; }
+                      #carouselgames div.nextRightSecond {
+                        z-index: 4;
+                        left: 85%;
+                        transform: translateY(50%) translateX(-50%);
+                        opacity: .7; }
+                        #carouselgames div.nextRightSecond img {
+                          width: 200px; }
+  
+  .buttons {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px; }

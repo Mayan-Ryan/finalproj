@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+                <% if(session.user_id) { %>
+                    <a href="/home" class="text signup-link">Home Page</a>
+                    <a href="/logout" class="btn btn-primary">Logout</a>
+                        
+                
+                <% } else { %>
+
+                  <div class="forms">
+                    <div class="form login">
+                        <span class="title">Login</span>
+                            <form method="post" action="/login">
+                                <div class="input-field">
+                                    <input type="email" name="user_email_address" placeholder="Enter your email" class="form-control" />
+                                    <i class="uil uil-envelope icon"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="user_password" placeholder="Enter your password" class="form-control" />
+                                    <i class="uil uil-lock icon"></i>
+                                </div>
+                                <div class="input-field button">
+                                    <input type="submit" class="btn" value="Login" />
+                                </div> 
+                            </form>
+                            <div class="login-signup">
+                              <span class="text">Not a member?
+                                  <a href="/register" class="text signup-link">Signup Now</a>
+                              </span>
+                          </div>
+                        </div>
+                      </div>
+                <% } %>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
